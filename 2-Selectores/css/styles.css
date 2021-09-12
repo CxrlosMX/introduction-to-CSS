@@ -16,12 +16,12 @@ Tipos de selectores
     -Selector de tipo de etiqueta -> nombre de la etiqueta */
 
 /* Selector universal este engloba a todo los elementos HTML por lo que no es muy recomendable hacer uso de el, solamente en casos muy particulares */
-* {
+/* {
   background-color: bisque;
-}
+} */
 
 /* Selectores de etiqueta, en este caso agregamos el nombre de la etiqueta y le aplicamos un estilo */
-h1 {
+/* h1 {
   background-color: tomato;
   font-size: 300%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -39,4 +39,24 @@ ul {
 }
 li {
   background-color: blueviolet;
+} */
+
+/* Selectores de atributos
+    -id-> id del elememtp
+    -clase-> clase del elemento
+    -otros atributos*/
+
+    /* Los atributos id para dar estilos a nuestros componentes no es correcto */
+/* #title{
+background-color: blueviolet;
+} */
+
+/* clase es lo màs recomendable usar para dar estilos para personalizar màs de un elemento, la ventaja es que podemos aplicar el estilo a mas de un elemento*/
+
+.text{
+    background-color: chartreuse;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
+
+
