@@ -10,3 +10,33 @@ Tipos de selectores
         Pseudoclases - PseudoElementos
 
 */
+
+/* Selectores Elementales
+    -Selector universal -> * asterisco
+    -Selector de tipo de etiqueta -> nombre de la etiqueta */
+
+/* Selector universal este engloba a todo los elementos HTML por lo que no es muy recomendable hacer uso de el, solamente en casos muy particulares */
+* {
+  background-color: bisque;
+}
+
+/* Selectores de etiqueta, en este caso agregamos el nombre de la etiqueta y le aplicamos un estilo */
+h1 {
+  background-color: tomato;
+  font-size: 300%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+p {
+  background-color: teal;
+  text-align: center;
+  text-overflow: initial;
+  font-family: unset;
+}
+ul {
+  background-color: red;
+}
+li {
+  background-color: blueviolet;
+}
