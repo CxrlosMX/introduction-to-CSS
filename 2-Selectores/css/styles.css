@@ -46,17 +46,50 @@ li {
     -clase-> clase del elemento
     -otros atributos*/
 
-    /* Los atributos id para dar estilos a nuestros componentes no es correcto */
+/* Los atributos id para dar estilos a nuestros componentes no es correcto */
 /* #title{
 background-color: blueviolet;
 } */
 
 /* clase es lo màs recomendable usar para dar estilos para personalizar màs de un elemento, la ventaja es que podemos aplicar el estilo a mas de un elemento*/
 
-.text{
+/* .text{
     background-color: chartreuse;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
+} */
+
+/* Otros atributos 
+-[Nombre del atributo que queremos seleccionar] -> 
+-[Atributo=valor]
+-[atributo]^=valor --Con este selector verificamos si este atributo empieza con el valor que le damos
+-[atributo*=valor] -->Con esto conseguimos que se seleecione o se apliquen cambios en el atributo seleccionado sin importar si este en el inico o inmedio o final, se aplicaran los cambios
+-[atributo-$=valor] --> Solo selecciona si el valor termina con la palabra especificada.
+-[atributo|=valor] --> Se utiliza especialmente en dialogos de idiomas
+*/
+[href] {
+  background-color: aqua;
 }
 
+[href="https://www.google.com/"]
+{
+  /* Para seleccionar en especial un elemento o atributo */
 
+  background-color: brown;
+}
+[href^="https"] {
+  /* En este caso solo se le agregara el estilo los atributos que tengan o empiecen con esa cadena de caracteres */
+  background-color: green;
+}
+
+[href*="modo"] {
+  /* No importa si lo tiene al principio, inmedio o al final, este elemento lo va a seleccionar */
+  background-color: hotpink;
+}
+[href$="verde"] {
+  background-color: blue;
+}
+
+[lang|="en"] {
+  background-color: burlywood;
+}
