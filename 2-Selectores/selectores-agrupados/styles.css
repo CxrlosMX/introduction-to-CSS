@@ -2,7 +2,7 @@
 si queremos cambiar su estilo podriamos cambiarlo a cada uno pero
 es apropiado y una buena practia ahorrar líneas de codigo
 por lo que podemos agrupar los componentes */
-
+/* 
 .title,
 .title2,
 .subtitle{
@@ -16,6 +16,22 @@ text-align: center;
 .text-3,
 .text-4{
     background-color: cornflowerblue;
-    font-family: monospace;
-    text-align: center;
+   
+} */
+
+/* Selector Combinadores
+    1.-Selector descendiente    
+*/
+
+/* En este caso solo queremos aplicar el estilo a nuestras etiquetas
+con la clase .title-2 que se encuentren dentro de un div */
+div .title-2{
+    background-color: aqua;
 }
+
+/* Esto no es correcto
+html body div .title-2{
+        background-color: aqua;
+} */
+
+
