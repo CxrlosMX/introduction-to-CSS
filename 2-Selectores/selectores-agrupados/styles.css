@@ -25,13 +25,29 @@ text-align: center;
 
 /* En este caso solo queremos aplicar el estilo a nuestras etiquetas
 con la clase .title-2 que se encuentren dentro de un div */
-div .title-2{
+/* div .title-2{
     background-color: aqua;
-}
+} */
 
-/* Esto no es correcto
+/* Esto no es correcto, bajar mas de dos niveles
 html body div .title-2{
         background-color: aqua;
 } */
+
+/* 2.-Selector de hermano siguiente-->Nos permite seleccionar el hermano siguiente 
+    Si el elemento esta dentro de otro elemento es hijo si el elemento esta al nivel del otro elemento son hermanos 
+*/
+
+.text-2 + .title-2{
+background-color: aquamarine;
+
+}
+
+/* 3.-Selector de hermanos siguientes--> ~
+    Solo se pintaran los elementos que se especifiquen despues de la etiqueta o clase especificada
+*/
+.text-2 ~ p{
+    background-color: blue;
+}
 
 
