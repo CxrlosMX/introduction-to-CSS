@@ -38,7 +38,7 @@ html body div .title-2{
     Si el elemento esta dentro de otro elemento es hijo si el elemento esta al nivel del otro elemento son hermanos 
 */
 
-.text-2 + .title-2{
+/* .text-2 + .title-2{
 background-color: aquamarine;
 
 }
@@ -46,8 +46,22 @@ background-color: aquamarine;
 /* 3.-Selector de hermanos siguientes--> ~
     Solo se pintaran los elementos que se especifiquen despues de la etiqueta o clase especificada
 */
-.text-2 ~ p{
+/* .text-2 ~ p{
     background-color: blue;
-}
+} */ 
+
+/* Selectores de Hijo: En este caso podemos especificar directamente cual es el hijo al cual le queremos dar estilo
+ */
+
+ .container > p{
+     /* Con el simbolo mayor que seleccionamos los que son directamente los hijos
+     por que si vemos en el ejemplo, podemos observar que dentro del div "container"
+     existe otro div que dentro de el se encuentra un <p> por lo cual ya no es un hijo directo
+     si no un nieto, por lo que para especificar que solo queremos darle estilo a nuuestros hijos
+     usamos el simbolo mayor que ">" */
+background-color: aqua;
+ }
+
+
 
 
