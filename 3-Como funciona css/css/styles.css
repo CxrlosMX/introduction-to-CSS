@@ -1,0 +1,45 @@
+/* ¿ Como Funciona CSS?
+    Especificidad -> Establece cómo de específico es un selector para saber qué estilo aplicar. 
+    El calculo se realiza con la siguiente fórmula o valores:
+    -
+    Cascada
+    Herencia
+*/
+
+/* Cada elemento tiene un valor, por lo que el que tenga mayor valor se le aplicara el estilo:
+-Etiquetas y pseudoelementos= 001
+-Clases, atributos y pseudoclases= 010
+-Ids=100
+-Estilos en linea==1000
+!importan gana a todos pero nunca se debe utilizar
+*/
+/* h1.title#title {
+  background-color: red;
+}
+h1 {
+  background-color: aqua;
+}
+
+.title {
+  background-color: aquamarine;
+}
+
+#title {
+  background-color: blue;
+}
+h1.title {
+  background-color: blueviolet;
+}
+h1#title {
+  background-color: cornflowerblue;
+} */
+
+/* !importan: Esta etiqueta nunca se utiliza, nunca */
+/* .title{
+    background-color: green !important;
+} */
+
+/* ¿Como evito que suceda lo anterior, esta claro, siempre debemos utilizar clases? */
+.title{
+    background-color:greenyellow;
+}
