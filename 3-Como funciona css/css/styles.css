@@ -2,7 +2,7 @@
     Especificidad -> Establece cómo de específico es un selector para saber qué estilo aplicar. 
     El calculo se realiza con la siguiente fórmula o valores:
     -
-    Cascada
+    Cascada ->Funciona simpre que la especifidad sobre el elemento sea la mism
     Herencia
 */
 
@@ -40,6 +40,32 @@ h1#title {
 } */
 
 /* ¿Como evito que suceda lo anterior, esta claro, siempre debemos utilizar clases? */
+
+
+/* Herencia -> Es la capacidad que tienen algunos elementos de hehredar algunas propiedades de sus elementos contenedores (padres,abuelos, etc)*/
+
 .title{
-    background-color:greenyellow;
+  background-color:greenyellow;
+  color: black;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.text{
+  /* Los enlaces no heredan propiedades de su padre */
+  color: green;
+}
+.link{
+  /* Para trabajar con la herencia y forzar para que una etiqueta herede las propiedades de la etiqueta padre usamos:  inherit*/
+  color:inherit;
+}
+
+
+.list{
+  color: blue;
+}
+
+/* ¿Que sucede si no quiero que alguna de las etiquetas hijas herede los estilos etc de la etiqueta padre? Utilizamos la palabra "initial"*/
+.link-item-extra{
+  color: initial;  
 }
