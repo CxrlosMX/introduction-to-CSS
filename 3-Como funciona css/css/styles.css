@@ -56,7 +56,7 @@ h1#title {
   color: green;
 }
 .link{
-  /* Para trabajar con la herencia y forzar para que una etiqueta herede las propiedades de la etiqueta padre usamos:  inherit*/
+  /* Para trabajar con la herencia y forzar para que una etiqueta here de las propiedades de la etiqueta padre usamos:  inherit*/
   color:inherit;
 }
 
@@ -65,7 +65,7 @@ h1#title {
   color: blue;
 }
 
-/* ¿Que sucede si no quiero que alguna de las etiquetas hijas herede los estilos etc de la etiqueta padre? Utilizamos la palabra "initial"*/
+/* ¿Que sucede si no quiero que alguna de las etiquetas hijas herede los estilos etc de la etiqueta padre? Utilizamos la palabra "initial "*/
 .link-item-extra{
   color: initial;  
 }
