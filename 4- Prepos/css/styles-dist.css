@@ -1,0 +1,14 @@
+/* En este archivo se trabajaran los estilos como siempre lo veniamos haciendo pero a la hora de enlazar nuestro archivo css el que utilizaremos sera el archivo css que nos proporcione prepos*/
+body{
+    background-color: aquamarine;
+}
+.example {
+    display: -ms-grid;
+    display: grid;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
