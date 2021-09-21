@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+  color:black;
+}
+.block{
+background-color:lightcoral;
+/* A los elementos de bloque solamente se le puede asignar un ancho y un alto: esto determina el espacio de trabajo */
+    width: 400px;
+    height: 400px;
+}
+.inline{
+    background-color: lightskyblue;
+    color: inherit;
+}
