@@ -1,4 +1,5 @@
-/*Los 4 lados posibles a los que podemos dar un margen son:
+/*margin: Para separar elementos que lo rodean
+Los 4 lados posibles a los que podemos dar un margen son:
 1.-margin-top: margen superior
 2.-margin-rifht: margen derecho
 3.-margin-bottom: margen superior
@@ -12,34 +13,92 @@ agujas del reloj
 1 valor -> margin: top/bottom/left/right
 */
 
+
+/* Padding: Aumentar el tamaño de la caja
+    Es la propiedad que nos permite generar espacio interno entre el bordde y la caja. Es un shorthans (propiedad abreviada) que controla los 4 lados posibles a los que dar padding.
+    padding-top: padding superior
+    padding-rigth: padding derecho
+    padding-bottom: padding inferior
+    padding-left: pading izquierdo
+
+    Admite hasta 4 valores que van en el orden de las agujas del reloj
+    4 valores -> padding: top right bottom left
+    3 valores -> padding: top left/riht bottom
+    2 valores -> padding: top/bottom left/right 
+    1 valor -> padding: top/right/bottom/left
+    */
+
+
 body {
   background-color: aquamarine;
-  color:black;
+  color: black;
+  /* Si es recomendable hacer esto*/
+  margin: 0;
 }
-.block{
-background-color:lightcoral;
-/* A los elementos de bloque solamente se le puede asignar un ancho y un alto: esto determina el espacio de trabajo */
-    width: 400px;
-    height: 400px;
-    /* margin: 100px 40px 150px 200px; */
-    /* Cuando queremos mover la horientación de nuestro bloque podemos hacer lo siguiente
+.header{
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+}
+
+.block {
+  background-color: lightcoral;
+  /* A los elementos de bloque solamente se le puede asignar un ancho y un alto: esto determina el espacio de trabajo */
+  width:300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /* margin: 100px 40px 150px 200px; */
+  /* Cuando queremos mover la horientación de nuestro bloque podemos hacer lo siguiente
      */
-    /*Para centrar una caja 
+  /*Para centrar una caja 
     margin-left: auto;
     margin-right: auto; */
 
-    margin-left : auto;
+  /* margin-left : auto; */
+
+  /* Padding es para hacer mas grande nuestro espacio de contenido*/
+  padding-bottom: 100px;
+}
+.title {
+  /* !important: Si queremos usar el valor auto: es necesario primero especificar el ancho y alto de nuestro bloque */
+  margin-left: auto;
+  background-color: lightskyblue;
+}
+.inline {
+  /* A nuestros elementos de línea no podemos asignarle un ancho y alto, este elemento toma el tamaño segun el    */
+  background-color: lightsalmon;
+  color: inherit;
+  /* En los elementos de linea solo podemos hacer uso de margin-left y margin-right */
+
+  /* Padding en este caso si podemos usar los ambos lados */
+  margin-right: 100px;
+
+
+  /*Padding en este caso si podemos aplicar top y bottom a diferencia del bottom */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
+
+.buttons{
+    background-color: lightpink;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.button{
     
+    margin-left: 100px;
+    padding: 20px 50px;
+   
 }
-.title{
-    /* !important: Si queremos usar el valor auto: es necesario primero especificar el ancho y alto de nuestro bloque */
-margin-left: auto;
-background-color: lightskyblue;
-}
-.inline{
-    /* A nuestros elementos de línea no podemos asignarle un ancho y alto, este elemento toma el tamaño segun el    */
-    background-color: lightsalmon;
-    color: inherit;
-    /* En los elementos de linea solo podemos hacer uso de margin-left y margin-right */
-    margin-right:100px;
-}
+
+
+/* Malas practicas*/
+/* 
+    margin: 0;
+    padding: 0;
+} */
+
+
