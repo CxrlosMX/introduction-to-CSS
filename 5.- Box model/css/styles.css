@@ -13,7 +13,6 @@ agujas del reloj
 1 valor -> margin: top/bottom/left/right
 */
 
-
 /* Padding: Aumentar el tamaño de la caja
     Es la propiedad que nos permite generar espacio interno entre el bordde y la caja. Es un shorthans (propiedad abreviada) que controla los 4 lados posibles a los que dar padding.
     padding-top: padding superior
@@ -28,6 +27,38 @@ agujas del reloj
     1 valor -> padding: top/right/bottom/left
     */
 
+/* border: Es la propiedad que nos permite modificar el borde de la caja
+    Es un shorthand (propiedad abreviada) que agrupa
+    3 Propiedades
+      border-width: ancho del borde
+        border-top-width
+        border-right-width
+        border-bottom-width
+        border-left-width
+      border-style: estilo del borde
+      border-top-style
+        border-right-style
+        border-bottom-style
+        border-left-style
+--Valores Style
+  none
+  hidden
+  dotted
+  dashed
+  solid
+  double 
+  groove
+  ridge
+  inset
+  outset
+
+      border-color: color del borde
+      border-top-color
+        border-right-color
+        border-bottom-color
+        border-left-color
+    
+    */
 
 body {
   background-color: aquamarine;
@@ -35,15 +66,15 @@ body {
   /* Si es recomendable hacer esto*/
   margin: 0;
 }
-.header{
-    background-color: lightgoldenrodyellow;
-    height: 50px;
+.header {
+  background-color: lightgoldenrodyellow;
+  height: 50px;
 }
 
 .block {
   background-color: lightcoral;
   /* A los elementos de bloque solamente se le puede asignar un ancho y un alto: esto determina el espacio de trabajo */
-  width:300px;
+  width: 300px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -74,31 +105,34 @@ body {
   /* Padding en este caso si podemos usar los ambos lados */
   margin-right: 100px;
 
-
   /*Padding en este caso si podemos aplicar top y bottom a diferencia del bottom */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
 }
 
-.buttons{
-    background-color: lightpink;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 30px;
+.buttons {
+  background-color: lightpink;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
 }
-.button{
-    
-    margin-left: 100px;
-    padding: 20px 50px;
-   
+.button {
+  margin-left: 400px;
+  padding: 50px 50px;
+  border: 20px solid red;
+  border-left-color: blue;
+  border-left-width: 15px;
+  border-left-style: groove;
+  border-right-color: chartreuse;
+  border-right-width: 15px;
+  border-right-style: double;
+  border-top-style: ridge;
+  border-bottom-style: dotted;
 }
-
 
 /* Malas practicas*/
 /* 
     margin: 0;
     padding: 0;
 } */
-
-
