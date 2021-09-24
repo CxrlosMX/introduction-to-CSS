@@ -60,6 +60,17 @@ agujas del reloj
     
     */
 
+    /* Box - sizing:Es la propieda que nos permite controlar el calculo que hace el navegador a la hora de modificar las propiedades content, padding y border
+      content-box->Valor por defecto
+      border-box->Cálculo de tamaño del elemento
+      incluyendo el padding y el border
+
+     */
+     /* Siempre que iniciemos un proyecto debemos agregar lo siguiente */
+     *{
+box-sizing: border-box;
+     }
+
 body {
   background-color: aquamarine;
   color: black;
@@ -79,6 +90,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  box-sizing: border-box;
   /* margin: 100px 40px 150px 200px; */
   /* Cuando queremos mover la horientación de nuestro bloque podemos hacer lo siguiente
      */
