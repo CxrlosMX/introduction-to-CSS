@@ -24,11 +24,30 @@ margin: 0;
     background-color: lightcyan;
     width: 300px;
     height: 300px;
+
     /* border-style: groove;
     border-color: lightpink;
     border-left-width: 30px;
     border-right-width: 30px; */
-    border-radius: 50px;
-    border-top-left-radius: 400px;
-    border-bottom-right-radius: 400px;
+    /* border-radius: 50px; */
+    /* border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; */ 
+    /* border-top-right-radius: 100px; */
+
+    /* Elipses 
+    Para indicar que queremos dibujar una elipse y no un
+    circulo utilizamos el siguiente simbolo "/"
+    A la izquierda van los radios en el eje X 
+    y a la derecha van los radios en el eje Y
+    */
+    /* 1 valor */
+    border-radius: 50px/100px;
+    /* 2 Valores */
+    border-radius: 50px 100px / 150px 60px;
+    /* 4 valores, uno para cada quien
+    1.-50px-50px
+    2.-100px-100px
+    3.-150px-160px
+    4.-200px-130px */
+    border-radius: 50px 100px 150px 200px/ 50px 100px 160px 130px;
 }
