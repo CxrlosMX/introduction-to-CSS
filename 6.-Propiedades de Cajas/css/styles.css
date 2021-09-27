@@ -8,46 +8,71 @@ border-bottom-left-radius -> Radio del borde inferior izquierdo
 
 Si sólo recibe un valor se dibujara un circulo en cada vertice del radio que especificamos
 */
-*{
-box-sizing: border-box;
+/* OverFlow 
+Decimos que un contenido se desborda cuando la caja es mas  pequeña que el contenedor
+overflow: Es la propiedad que controla que debe hacer la caja cuando su contenido se desborda del contenedor. Es un shorthand que engloba overflow-x y overflow-y 
+Tiene cuatro valores posibles:
+visible -> Es el valor por defecto
+hidden -> El contenido que se desborde no se vera. Si aplicamos esta propiedad
+en un solo eje, el otro se pondrá automaticamente en el valor scroll
+Scroll -> Aparecerán barras de scroll en el eje asignado (x, y o ambas)
+auto -> Aparecerán barras de scroll en el caso de que hicieran
+*/
+* {
+  box-sizing: border-box;
 }
-body{
-background-color: #333;
-color: azure;
+body {
+  background-color: #333;
+  color: azure;
+  margin: 0;
+}
+.text{
+color: black;
 margin: 0;
 }
 
-.box{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightcyan;
-    width: 300px;
-    height: 300px;
+.box {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightcyan;
+  width: 300px;
+  height: 300px;
 
-    /* border-style: groove;
+  /* border-style: groove;
     border-color: lightpink;
     border-left-width: 30px;
     border-right-width: 30px; */
-    /* border-radius: 50px; */
-    /* border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px; */ 
-    /* border-top-right-radius: 100px; */
+  /* border-radius: 50px; */
+  /* border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; */
+  /* border-top-right-radius: 100px; */
 
-    /* Elipses 
+  /* Elipses 
     Para indicar que queremos dibujar una elipse y no un
     circulo utilizamos el siguiente simbolo "/"
     A la izquierda van los radios en el eje X 
     y a la derecha van los radios en el eje Y
     */
-    /* 1 valor */
-    border-radius: 50px/100px;
-    /* 2 Valores */
-    border-radius: 50px 100px / 150px 60px;
-    /* 4 valores, uno para cada quien
+  /* 1 valor */
+  /* border-radius: 50px/100px; */
+  /* 2 Valores */
+  /* border-radius: 50px 100px / 150px 60px; */
+  /* 4 valores, uno para cada quien
     1.-50px-50px
     2.-100px-100px
     3.-150px-160px
     4.-200px-130px */
-    border-radius: 50px 100px 150px 200px/ 50px 100px 160px 130px;
+  /* border-radius: 50px 100px 150px 200px/ 50px 100px 160px 130px; */
+
+  /* Uso overflow */
+  border-radius: 50px;
+  /* overflow-y:auto ; */
+  overflow: hidden;
+}
+.box-1
+,.box-2{
+padding:22px ;
+background-color: lightcoral;
+
 }
