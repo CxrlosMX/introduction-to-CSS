@@ -24,6 +24,7 @@ body {
 /* Colapsado de padres e hijos
 -En ocaciones los hijos tienen margenes que provocan que el margen del contenedor padre se colapse */
 .title {
+   
     margin-left: auto;
     margin-right: auto;
 }
