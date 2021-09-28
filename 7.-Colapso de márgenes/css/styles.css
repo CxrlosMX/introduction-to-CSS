@@ -1,0 +1,43 @@
+/* LOS MARGENES VERTICALES COLAPSAN
+    -Es recomendable o lo que todos los desarrolladores recomiendan en dar margenes 
+    con margin-bottom
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  color: azure;
+  margin: 0;
+}
+
+.header {
+  background-color: lightcoral;
+  height: 100px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* 
+  padding-top: 0.1px;
+  border-top: 0.1px solid red;
+  */
+}
+/* Colapsado de padres e hijos
+-En ocaciones los hijos tienen margenes que provocan que el margen del contenedor padre se colapse */
+.title {
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-1,
+.box-2 {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: lightcyan;
+  width: 300px;
+  height: 300px;
+}
+.box-1 {
+  /* Si le ponemos un margin-top de 20px no aumentaria y se agrego un margen de 30px este solo aumentaria 10px 
+    --Es recomendable ir empujando los elementos con el margin-bottom*/
+  margin-bottom: 30px;
+}
