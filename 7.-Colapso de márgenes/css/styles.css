@@ -42,3 +42,42 @@ body {
     --Es recomendable ir empujando los elementos con el margin-bottom*/
   margin-bottom: 30px;
 }
+.box-2{
+  margin-bottom: 30px;
+}
+
+
+
+.contenedor-text{
+  background-color:cadetblue;
+  width: auto;
+  height: 100px;
+  
+  
+}
+/* La propiedad display nos sirve para cambiar el contexto
+de los elementos dentro del navegador
+
+Admite varios valores:
+  none-> Hacer que el elemento no se muestre, pero sigue cargandose.
+  block-> Hace que el elemento sea de bloque
+  inline-blobk -> Hace que el elemento sea de linea
+  pero admiote medidas de márgenes verticales
+
+  Ejemplo: Si tenemos un elementos de linea podemos modificar
+  su comportamiento, si es de linea el elemento podemos indicar 
+  que queremos que sea de bloque
+*/
+.text{
+  background-color: darkblue;
+  /* Ocultamos el elemento */
+  display: none;
+}
+.link{
+background-color: darkgoldenrod;
+display: block;
+/* Cuando tenemos un elemento de linea y queremos que tenga 
+  las propiedades de un elemento de bloque podemps hacer uso
+  de : */
+  display: inline-block;
+}
