@@ -1,0 +1,57 @@
+/* La prpiedad box-shadowse creo para añadir efecto 
+    de sombra a nuestra caja.
+    Es esencia lo que hace es crear un clon de la caja respetando la forma
+    de su box-model (ancho,alto, redondez) *
+    
+    La sintexis de box-shadow se puede escribir de distintas formas según lo que queramos conseguir.
+    Los valores que le podemos poner son::
+    offset-x -> Desplazamiento en x(obligatorio)
+    offset-y -> Desplazamiento en y (obligatorio)
+    blur-radius -> Desenfoque de la sombra
+    spread-radius -> Expansión de la sombra
+    color -> El color de la sombra, si no lo especificamos el color lo hereda del elemento al que pertenece
+    inset -> Determina si la sombra sera interior o exterior 
+
+   */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+}
+
+.box {
+  background-color: chocolate;
+  color: #fff;
+  width: 200px;
+  padding: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+  border-radius: 30px;
+  /*Normal:  box-shadow: 10px 10px black;
+  ---------------------------------------
+  blur-radius -> Desenfoque de la sombra */
+  /* box-shadow: 10px 10px 5px;
+  -------------------------------- */
+
+  /* spread-radius -> Expansión de la sombra
+  box-shadow: 10px 10px 10px 10px; 
+  ---------------------------------*/
+
+  /* color -> El color de la sombra, si no lo especificamos el color lo hereda del elemento al que pertenece 
+  box-shadow: 10px 10px 5px 2px cornflowerblue;
+  -------------------------------*/
+  /* inset -> Determina si la sombra sera interior o exterior 
+  box-shadow:inset 10px 0 10px 0 #333 ;
+  --------------------------------*/
+  /* No existe un limite de sombras, podemos agregar 
+    las sombras que sean necesarias solo agregamos 
+    una coma y podremos seguir*/
+  box-shadow: 5px 5px red, 10px -10px red, 15px 10px blue;
+  /*----------------------
+   Nota: Las sombras siempre se dibujaran en el 
+  orden que las hemos puesto */
+}
