@@ -1,0 +1,58 @@
+/* 
+    Z-INDEX: Es la propiedad que nos permite ordenar los elementos superpuestos para controlar cual se coloca por delante y cual po detrás
+    
+NOTA: Poner Z-INDEX: auto; es lo mismo que no poner nada
+NORMAS: No utilizar números consecutivos, si en dado caso llegaramos a agregar mas elementos tendriamos que cambiar los valores, por eso es más recomendable utilizar valores de 10 en 10 o hasta valores de 100 en 100 
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+/* NOTA: Un padre nunca se puede colocar delante del hijo, aun asi agregemos muchos valores etc. Es imposible
+Si queremos colocar un elemento detras del padre, lo ideal es colocar el hijo detras del padre, usando valores negativos pero debes tomar en cuenta que nunca le debemos asignar un Z-INDEX a nuestro elemento padre o podemos poner Z-INDEX: auto porque es como no poner nada
+*/
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: #555;
+  position: relative;
+  z-index: auto;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #333;
+}
+.box-1 {
+  background-color: lightcoral;
+  position: relative;
+  left: 150px;
+  /* Colocamos el hijo detras del padre */
+  z-index: -1;
+}
+.box-1-2 {
+  background-color: aquamarine;
+  position: relative;
+  left: 150px;
+  /* Colocamos el hijo detras del padre */
+  z-index: -2;
+  top: -25px;
+}
+.box-2 {
+  background-color: lightgreen;
+  position: relative;
+  top: 50px;
+  z-index: 10;
+}
+/* Para poder usar X-INDEX nuestro elemento debe estar posicionado */
+.box-3 {
+  background-color: lightseagreen;
+  position: relative;
+  z-index: 20;
+}
