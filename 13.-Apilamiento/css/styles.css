@@ -1,0 +1,53 @@
+/* El staking Context o el contexto de apilamiento es el espacio donde nuestros elementos se van a ir apilando para que unos queden por detras y otros por delante
+
+El orden del staking context es: (de delante a atrás):
+¿Como se ubicaran en nuestro navegador nuestros elementos?
+    1.-Elementos posicionados con un z-index de 1 ó más
+    2.-Elementos posicionados sin z-index declarado (o z-index:auto)
+    3.-Elementos no posicionados
+    4.-Elementos con z-index negativo
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #333;
+}
+.box-1 {
+  background-color: lightcoral;
+  /* Si queremos que nuestra Box 1 se muestra por encima de nuestro title, no es necesario colocar z-index, recordemos el punto "2.-" */
+  position: relative;
+  z-index: 10;
+}
+.box-2 {
+  background-color: lightgreen;
+  /* Al colocar un elemento por delante de un contenedor con hijos, el contenedor sera el unico que se ponga por encima de otro contenedor pero los hijos seguiran por encima como podemos ver el ejemplo del texto */
+  margin-top: -50px;
+}
+.box-3 {
+  background-color: lightskyblue;
+}
+/* Dentro de los contenedores abra siempre otro contexto de apilamiento, los hijos de un contenedor tendran otro comportamiento a comparación de los de fuera */
+.container {
+  background-color: lightseagreen;
+  margin-top: -50px;
+  position: relative;
+  
+}
+.title {
+  background-color: lightslategrey;
+  position: relative;
+  opacity: 0.75;
+  z-index: 20;
+}
+.text {
+  margin: 0;
+  margin-top: -40px;
+}
