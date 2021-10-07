@@ -1,0 +1,60 @@
+/* Las medidas en CSS se pueden agrupar en 2 grupos, absolutas y relativas
+
+Las medidas absolutas NO CAMBIAN y siempre matendrán su tamaño independientemente del dispositivo o la interacción del usuarop:
+La más usada es px(píxeles) cuya medida es 1/96 de 1in, pero existen otras como: 
+cm(centimetros) -> 1cm=96px/2,54
+mm(milimetro) -> 1mm=1/10 de 1cm
+A(cuarto de milimetro) -> 1Q=1/40 de 1cm
+in(inches,pulgadas)-> 1in=2,54cm=96px
+pc(picas) -> 1pc=1/16 de 1in
+pt(puntos) -> 1pt=1/72 de 1in
+
+Las medidas relaticas SIEMPRE dependen de un contexto son las que se recomiendan utilizar en la gran mayoria de ocasiones porque nos van a permitir que todos los elementos escalen propircionalmente. Las más usadas son em, rem, %,vw, vh, vmin, vmax, aunque tenemos otras como:
+ex -> Altura x de la fuente del elemento
+ch -> La media del ancho del glifo "0" de la letra del elemento
+lh -> Altura de la linea del elemento
+
+
+rem-> Corresponde a la media de la "m" de la raiz del documento(HTML)
+Ejemplo: 16px =1rem ->  2rem=32px ........El valor de rem siempre sera su valor por 16px, siempre!!!!!!
+
+
+
+em-> Corresponde a la medida de la "m" del contexto donde nos encontremos
+A comparación, em, tendra el valor el que tenga el HTML, el valor por defecto sera 16px, pero si cambiamos el valor en el body por 10px, entonces el valor de em cambiara: 
+Ejemplo 
+Si el valor es 16px(por defecto)
+1em=16px
+2em=32px
+Si el valor es modificado a otro valor como 10px
+1em=10px
+2em=20px
+
+El estandar del tamaño de fuente por defecto en la raiz del documento es de 16px, y 
+NO ES RECOMENDABLE MODIFICARLO.
+
+NOTA: Tanto "em" como "rem" se calcula en base a la propiedad fonr-size(tamaño de fuente)
+*/
+
+/* Todos los navegadores por defecto tienen 16px: Modificarlo es una mala practica de programación */
+body {
+  background-color: #333;
+  color: lightcoral;
+}
+
+.title {
+  /* Recomendación: Para tamaños de fuente, es muy recomendando utilizar rem */
+  font-size: 2rem;
+}
+.link {
+  /* Es recomendable usar em, cuando queramos que nuestros elementos con el texto creesca proporcionalmente al texto usaremos em.
+    Si queremos que la medida siempre sea la misma a la raiz usaremos ren
+    */
+    display: inline-block;
+  margin-bottom: -2rem;
+  background-color: lightcoral;
+  color: #333;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  font-size: 4rem;
+}
