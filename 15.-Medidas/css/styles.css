@@ -89,18 +89,45 @@ Ventaja: Las medidas son proporcional al tamaño del contenedor
   NOTA: Height es una propiedad que tenéis que usar con mucho cuidado. Si no es necesario establecer un alto, dejar que el elemtno sea el que decida el alto.
 
 */
-.container-2{
+.container-2 {
   width: 300px;
   /* No es muy recomendado usar Height, si quieresa dar espacio entre tu contenido dentro de un contenedor, lo ideal es usar Padding */
   height: auto;
   padding-bottom: 30px;
   background-color: bisque;
 }
-.box-children{
+.box-children {
   width: 50%;
+  /* Cuando utilizamos viewport width, al redimencionar el tamaño de nuestro elemento tambien cambia por que obtiene el 50% de nuestro navegador o ventana, entonces esto provoca que se redimencione */
+  width: 50vw;
+  height: 100px;
+  width: 30vmax;
   /* El alto se calcula a base de su cotenedor cuando usamos porcentajes */
   /* height: 50%;  */
- 
-  background-color: blueviolet;
 
+  background-color: blueviolet;
+}
+/* 
+VIEWPORT
+El viewport es el área útil donde se mostrará la página web. IMPORTANTE, tendras en cuenta que es el área visible sin hacer scroll. 
+Podemos usar el viewport como medida de varias formas: 
+vw -> Viewport Width, hace referencia al ancho del viewport.
+vh-> Viewport height, haver referencia al alto del viewport.
+vmax -> Utiliza el vamor más grande entre el ancho y el alto del viewport.
+vmin-> Utiliza el vamor más pequeño entre el ancho y el alto del viewport.
+
+1vw= 1% del ancho del viewport
+1vh= 1% del alto del viewport
+1vmin= 1% del valor que sea más pequeño del viewport
+1vmax= 1% del valor qu sea más grande del viewport
+
+*/
+
+.header {
+  background-color: cornflowerblue;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  /* Cuando utilizamos 100viewportwidth  debemos tener en cuenta la barra de scroll, por que tiene o usa un espacio dentro del navegador, lo más recomendable es usar 100%*/
+  width: 100vw;
 }
