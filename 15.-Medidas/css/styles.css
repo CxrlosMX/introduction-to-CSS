@@ -40,21 +40,67 @@ NOTA: Tanto "em" como "rem" se calcula en base a la propiedad fonr-size(tamaño 
 body {
   background-color: #333;
   color: lightcoral;
+  margin: 0;
 }
 
 .title {
   /* Recomendación: Para tamaños de fuente, es muy recomendando utilizar rem */
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.title-2 {
+  font-size: 3rem;
+  display: block;
 }
 .link {
   /* Es recomendable usar em, cuando queramos que nuestros elementos con el texto creesca proporcionalmente al texto usaremos em.
     Si queremos que la medida siempre sea la misma a la raiz usaremos ren
     */
-    display: inline-block;
-  margin-bottom: -2rem;
+  display: inline-block;
+  margin-bottom: -1rem;
   background-color: lightcoral;
   color: #333;
   padding: 1em 2em;
   border-radius: 0.5em;
   font-size: 4rem;
+}
+
+/* % -> Cuando usamos porcentage usamos de referencia el tamaño del contenedor y el navegador calcula ese porcentage. Esto no ocurre cuando usamos transform
+auto -> Cuando usamos auto le pedimos al nevegador que calcule en funcion del espacio disponible
+
+Ventaja: Las medidas son proporcional al tamaño del contenedor
+*/
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.box {
+  width: 50%;
+  height: 50%;
+  background-color: indigo;
+}
+/* 
+  HEIGHT:
+  %-> Cuando estamos dentro de un contenedor, este tiene que tener un alto declarado, si no no podrá calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituirá automaticamente por auto.
+
+  auto -> Cuando utilizamos el auto lo calculará el navegador en base al contenido del elemento
+
+  NOTA: Height es una propiedad que tenéis que usar con mucho cuidado. Si no es necesario establecer un alto, dejar que el elemtno sea el que decida el alto.
+
+*/
+.container-2{
+  width: 300px;
+  /* No es muy recomendado usar Height, si quieresa dar espacio entre tu contenido dentro de un contenedor, lo ideal es usar Padding */
+  height: auto;
+  padding-bottom: 30px;
+  background-color: bisque;
+}
+.box-children{
+  width: 50%;
+  /* El alto se calcula a base de su cotenedor cuando usamos porcentajes */
+  /* height: 50%;  */
+ 
+  background-color: blueviolet;
+
 }
