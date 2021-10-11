@@ -131,3 +131,20 @@ vmin-> Utiliza el vamor más pequeño entre el ancho y el alto del viewport.
   /* Cuando utilizamos 100viewportwidth  debemos tener en cuenta la barra de scroll, por que tiene o usa un espacio dentro del navegador, lo más recomendable es usar 100%*/
   width: 100vw;
 }
+
+/* Limitadores de ancho y alto
+Cuando establecemos un width y/o un height con una medida que es relativa, es posibole que no queremos que se respete esa medida en todos los casos.
+Para ello tenemos propiedades que limitna esas medidas:
+min-width: Indica el ancho minimo que puede alcanzar el elemento.
+max-width: Indica el ancho máximo que puede alcanzar el elemento
+min-height; Indica el alto minimo que puede alcanzar el elemento
+max-height; Indica el alto máximo que puede alcanzar el elemento
+
+*/
+.contenedor{
+  height: 100px;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+  background-color: crimson;
+}
