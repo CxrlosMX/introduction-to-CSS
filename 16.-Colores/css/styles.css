@@ -1,0 +1,70 @@
+/* Colores
+La mayoria de las pantallas funcionan con un modo de color aditivo. La suma de RGB da como resultado un blanco. Tenemos varias formas de dar color en CSS
+
+keywords-> palabras clave que representan colores
+
+IMPORTANTE: Recordemos 
+que existe el color "transparent"
+*/
+body {
+  margin: 0;
+  background-color: #fff;
+}
+.title {
+  color: #333;
+  text-align: center;
+  font-size: 3rem;
+}
+/* .box {
+    /* Para cambiar el color del contenedor
+  background-color: rgb(155, 116, 64);
+  /* Color para cambiar el color del contenido */
+/* color: #fff;
+  width: 20vw;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto; */
+
+/* border-top: 500px solid red;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent; 
+} */
+
+/* ------------RGB/A 
+En el mdo RGB tenemos tres canales (Red, Green, Blue) y tenemos 
+8 bits de color por canal, (cada bit tiene dos posibles valores 0 a 1) lo que significa que tenemos 2¨8 posibles valores que van desde 0 hasta 255
+
+Esto no da un total de  255*255*255=16,681,375 colores
+
+Su sintaxis es rbg(R,G,B);
+
+Si ponemos todos los canales a 0 tendremos un negro puro y si los ponemos a 255 tendremos un blanco.
+
+Para movernos por la gama de grises debemos poner los 3 canales con el mismo valor, si poenmos los 3 canales a 128 tendremos el gris puro.
+
+El modo RGB nos da la opción de utilizar un cuarto canal que corresponedia al canal alpha, es decir , la transparencia y su valor va desde 0 a 1. Tenemos dos sintaxis para utilizar el canal alpha
+
+rgba(R,G,B,A);
+rgb(R G B/A);
+
+*/
+.box {
+  width: 20vw;
+  height: 20vh;
+  background-color: rgb(204, 16, 72);
+  /* RGBA: A= 0 al 1
+  0.1=10%
+  0.2=20%
+  0.3=30%
+  0.4=40%
+  0.5=50%
+  ....1=100%
+  
+  Existen 2 posibles sintaxis, esta es la antigua*/
+  /* background-color: rgba(0,0,0, 0.1); */
+  /* Nueva forma */
+  background-color: rgba(204 16 72 / 0.9);
+  box-shadow: 10px 10px 5px rgba(0 0 0 / 0.3);
+
+  
+}
