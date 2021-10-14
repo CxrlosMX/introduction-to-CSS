@@ -9,6 +9,12 @@ que existe el color "transparent"
 body {
   margin: 0;
   background-color: #fff;
+  background-color: hsl(0, 100%,90%);
+  /* Transpariencia en HSL, tenemos dos posibles sintaxis
+  --Antigua */
+  background-color: hsla(60, 100%, 50%, 0.5);
+  /* Nueva */
+  background-color: hsl(180 100% 60% / 0.3);
 }
 .title {
   color: #333;
@@ -63,6 +69,33 @@ Para indicar que vamos usar notación hexadecimal debemos usar el símbolo de ha
  Cuando una pareja utiliza el mismo valor se puede omitir el segundo valor.
 
 
+HSL/HSLA
+El modo de color HSL es el más intuitivo para los humanos. Su nombre viene de las siglas Hue(tono) Saturation(saturación) y Lightness(Luminacia) 
+
+El primer valor es el angulo en el circulo cromático donde 0 y 360 será el color rojo. Hay ciertos valores que pueden servir como referencia para relacionar mejor los colores con angulos:
+
+0°-> Rojo°
+60°-> Amarillo°
+120° -> Verde°
+180° -> Cyan °
+240°-> Azul°
+300°-> magenta°
+
+El segundo valor es la saturación o intensidad del color.
+
+0% -> gris
+100% -> color puro
+
+El tercer valor es la luminosidad del color
+0% -> negro, nada de luz
+100% -> blanco, luz maxima
+
+NOTA: Es importante que aunque el valor de saturación o luminancia sea 0 hay que poner 0% si no, no funcionara.
+
+El modo HSL también admite transparencia y su sintaxis es la misma que la del modo RGB. Tenemos dos sintaxis disponibles:
+hsla(h,s,l.a);
+hsl(h s l / a);
+En ambos casos el valor alpha va de 0 a 1
 */
 .box {
   width: 20vw;
@@ -71,7 +104,7 @@ Para indicar que vamos usar notación hexadecimal debemos usar el símbolo de ha
   background-color: #00ff00;
   /*   Cuando una pareja utiliza el mismo valor se puede omitir el segundo valor.*/
   background-color: #0f0;
-  
+
   /* RGBA: A= 0 al 1
   0.1=10%
   0.2=20%
@@ -85,6 +118,10 @@ Para indicar que vamos usar notación hexadecimal debemos usar el símbolo de ha
   /* Nueva forma */
   /* background-color: rgba(204 16 72 / 0.9); */
   box-shadow: 10px 10px 5px rgba(0 0 0 / 0.3);
-
-  
+}
+.box-2 {
+  width: 20vw;
+  height: 20vh;
+  background-color: hsl(300, 100%, 50%);
+  box-shadow: 5px 5px 10px hsl(360 100% 0% / 0.5);
 }
