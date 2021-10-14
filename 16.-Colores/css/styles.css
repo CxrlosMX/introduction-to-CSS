@@ -47,11 +47,31 @@ El modo RGB nos da la opción de utilizar un cuarto canal que corresponedia al c
 rgba(R,G,B,A);
 rgb(R G B/A);
 
+
+HEXADECIMAL
+La notación hexadecimal es la más común en desarrollo web, se basa en los mismo principios que el RGB pero escrito en notación hexadecimal
+
+El sistema Hexadecimal es un sistema basado en 16 valores del 0 al 15.
+Utiliza los dígitos del 0 al 9 y las letras de la A a la F
+
+En este tipo de notación también necesitamos 256 valores.
+Se compone de 16 caracteresen parejas ya que 16*16= 256
+' 1 2 3 4 5 6 7 8 9 A B C D E F '
+' 1 2 3 4 5 6 7 8 9 A B C D E F '
+
+Para indicar que vamos usar notación hexadecimal debemos usar el símbolo de hash/almoadilla # y a continuación usaremos esta notación por parejas #RRGGBB
+ Cuando una pareja utiliza el mismo valor se puede omitir el segundo valor.
+
+
 */
 .box {
   width: 20vw;
   height: 20vh;
-  background-color: rgb(204, 16, 72);
+  /* Hexadecimal colores */
+  background-color: #00ff00;
+  /*   Cuando una pareja utiliza el mismo valor se puede omitir el segundo valor.*/
+  background-color: #0f0;
+  
   /* RGBA: A= 0 al 1
   0.1=10%
   0.2=20%
@@ -63,7 +83,7 @@ rgb(R G B/A);
   Existen 2 posibles sintaxis, esta es la antigua*/
   /* background-color: rgba(0,0,0, 0.1); */
   /* Nueva forma */
-  background-color: rgba(204 16 72 / 0.9);
+  /* background-color: rgba(204 16 72 / 0.9); */
   box-shadow: 10px 10px 5px rgba(0 0 0 / 0.3);
 
   
