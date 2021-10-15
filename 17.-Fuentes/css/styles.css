@@ -1,0 +1,12 @@
+/* Fuentes desde un servidor remoto, son fuentes que se encuentran en un servidor y que nosotros descargamos para su usu, la más famosa es Google Fonts
+
+Siempre que utilicemos fuentes no genéricas, debemos poner fuentes genéricas de fallback(Respaldo)
+
+Siempre es recomendable utilizar solamente una fuente, para evitar que nuestra página web demore mucho en cargar los elementos
+*/
+body {
+  color: #fff;
+  background-color: #333;
+  /* Si por cualquier motivo la fuente no carga, el navegador salta a la siguiente fuente, para eso no tenemos ningun limite podemos agregar otras fuentes para que intenten cargar si una falla*/
+  font-family: "Roboto", sans-serif;
+}
