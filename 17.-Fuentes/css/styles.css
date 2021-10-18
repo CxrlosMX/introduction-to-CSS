@@ -10,9 +10,9 @@ NOTA: Si vas a usar una gran cantidad de iconos en tu web compensa usar la libre
 Si sólo usarás unos pocos es mejor descargarlos en formato svg y utilizarlos como imagenes.
 
 */
-@font-face{
-  font-family: 'HandWritten';
-  src: url('/assets/fonts/SCRIPALT.ttf');
+@font-face {
+  font-family: "HandWritten";
+  src: url("/assets/fonts/SCRIPALT.ttf");
 }
 body {
   color: #fff;
@@ -36,7 +36,37 @@ Regla @font-face
 Esta es la forma de utilizar fuentes que tenemos descargadas y que no traemos de un servidor remoto, cuando usamos google fonts, esto es lo que esta pasando por detras.
 
 */
-.text{
-  font-family: 'HandWritten';
+.text {
+  font-family: "HandWritten";
+}
+
+/* 
+Transformaciones de texto: 
+Text-transform: Esta propiedad nos permite hacer transformaciones ESTETICAS en nuestro texto.
+Adime los valores: 
+none: No se aplicará ninguna transformación
+Lowercase: El texto se pondrá en minusculas
+Uppercase: El texto se pondrá en mayúsculas
+Capitalize: Transforma la primera letra de cada palabra en mayúscula
+
+Adorno en el texto:
+Text-decoration: Esta propiedad nos permite controlar la línea que podemos poner en los textos.
+Adime los valores:
+none: Elimina cualquier línea
+underline: Coloca una linea bajo el texto
+overline: Coloca una linea sobre el texto
+line-through: Coloca una linea tachando el texto
+
+
+Text-Shadow: Funciona exáctamente igual que box.shadow, con la unica diferencia de que no permite valores inset ni la expacion de la sombra.
+*/
+.title{
+  text-transform: capitalize;
+  text-shadow: 3px 3px 0 #000;
 
 }
+.link{
+  text-decoration: none;
+  color: #fff;
+}
+
