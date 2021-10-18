@@ -1,1 +1,1 @@
-body{color:#fff;background-color:#333;font-family:"Roboto",sans-serif}.icon{filter:invert(1)}
+@font-face{font-family:'HandWritten';src:url('/assets/fonts/SCRIPALT.ttf')}body{color:#fff;background-color:#333;font-family:"Roboto",sans-serif}.icon{filter:invert(1)}.text{font-family:'HandWritten'}
