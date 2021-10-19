@@ -60,13 +60,34 @@ line-through: Coloca una linea tachando el texto
 
 Text-Shadow: Funciona exáctamente igual que box.shadow, con la unica diferencia de que no permite valores inset ni la expacion de la sombra.
 */
-.title{
+.title {
   text-transform: capitalize;
+  /* Admite más de una sombra */
   text-shadow: 3px 3px 0 #000;
-
 }
-.link{
+.link {
   text-decoration: none;
   color: #fff;
 }
 
+/* Espacio en fuentes y textos
+  Letter-spacing: Establece la separación entre caracteres, se puede establecer en cualquier medida valida para CSS
+
+  Word-spacing: Establece la separación entre palabras, se puede establecer en cualquier medida válida para CSS
+
+  Line-height: Establece el alto de cada linea, se puede dar una medida concreta o se puede poner un número que se multiplicara por el font size del texto al que se lo  estemos aplicando
+
+  Orientación del texo: 
+  writing-mode: Establece la direccion del texto
+
+  ¿Cuando usar? En ocaciones algunas fuentes vienen por defecto muy juntas y algunas palabras, no suelen verse del todo bien por lo que es recomendable utilizar este tipo de herramientas. Tambien podemos usar valores negativos
+*/
+.parraf {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  /* line-height es más utilizada 
+  Se utiliza cuando utilizamos una fuente con separaciones estrechas*/
+  line-height: 3;
+  /* ----- */
+  writing-mode: vertical-rl;
+}
