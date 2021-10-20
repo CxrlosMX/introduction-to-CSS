@@ -1,23 +1,44 @@
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
 /* La dirección por defecto de un flex, es horizontal */
-.container{
-    background-color: #333;
-    /* Con display flex nuestro contenedor  se comporta como bloque*/
-    display: flex; 
-    /* Si tenemos la necesidad de alinear muchas cajas podemos hacer uso de display: inline-flex */
-    /* display: inline-flex; */
+.container {
+  height: 30vh;
+  background-color: #333;
+  /* Con display flex nuestro contenedor  se comporta como bloque*/
+  display: flex;
+  /* Si tenemos la necesidad de alinear muchas cajas podemos hacer uso de display: inline-flex */
+  /* display: inline-flex; */
 
-    /* --------------------------
+  /* --------------------------
     flex-direction
     */
-    flex-direction: row-reverse;
+  /* flex-direction: row-reverse;
     flex-direction: row;
     flex-direction: column;
-    flex-direction: column-reverse;
-}
-.item{
-    background-color: #666;
+    flex-direction: column-reverse; */
+    flex-direction: row;
+    
+  /* --------------------
+    flex-wrap:especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. 
+    Propiedades
 
+    nowrap:
+    Los elementos flex son distribuidos en una sola línea, lo cual puede llevar a que se desborde el contenedor flex. 
+    wrap:
+    Los elementos flex son colocados en varias líneas.
+    */
+   
+
+    flex-wrap: nowrap;
+
+    /* Si queremos agregar las dos propiedades en una sola linea de codigo podemos usar flex-flow
+    */
+    flex-flow: column wrap;
+}
+.item {
+    border: medium solid #999;
+  background-color: #666;
+  width: 20%;
+  height: 20%;
 }

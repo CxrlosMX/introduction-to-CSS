@@ -1,1 +1,1 @@
-body{box-sizing:border-box}.container{background-color:#333;display:flex;flex-direction:row-reverse;flex-direction:row;flex-direction:column;flex-direction:column-reverse}.item{background-color:#666}
+body{box-sizing:border-box}.container{height:30vh;background-color:#333;display:flex;flex-direction:row;flex-wrap:nowrap;flex-flow:column wrap}.item{border:medium solid #999;background-color:#666;width:20%;height:20%}
