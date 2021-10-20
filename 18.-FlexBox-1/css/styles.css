@@ -1,0 +1,15 @@
+body{
+    box-sizing: border-box;
+}
+/* La dirección por defecto de un flex, es horizontal */
+.container{
+    background-color: #333;
+    /* Con display flex nuestro contenedor  se comporta como bloque*/
+    display: flex; 
+    /* Si tenemos la necesidad de alinear muchas cajas podemos hacer uso de display: inline-flex */
+    display: inline-flex;
+}
+.item{
+    background-color: #666;
+
+}
