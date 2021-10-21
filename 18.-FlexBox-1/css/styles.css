@@ -48,6 +48,24 @@ body {
     */
     /* Define la alinación de los elementos hijos */
     justify-content: space-evenly;
+  /* //------------------------------------- */
+    /*
+    Align-items: 
+    Valor por defecto: stretch
+    -flex-start
+    -flex-end
+    -center
+    -baseline
+    */
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* align-content ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal. Esta propiedad no funciona cuando los hijos estan en una sola linea
+    Cuando flex:wrap:nowrap NO FUNCIONA*/
+    align-content: flex-end;
+
+
 }
 .item {
     border: medium solid #999;
