@@ -30,11 +30,24 @@ body {
     */
    
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap  ;
 
     /* Si queremos agregar las dos propiedades en una sola linea de codigo podemos usar flex-flow
     */
-    flex-flow: column wrap;
+    flex-flow:column wrap-reverse;
+
+    /*---------------------------------- 
+    Alineación del Main Axis
+    justify-content: flex-start
+    justify-content: flex-end
+     justify-content: center
+     justify-content: space-between
+     justify-content: space-around
+     justify-content: scpace-evenly
+     Lo que define en que eje se van a colocar es nuestro flex-direction:
+    */
+    /* Define la alinación de los elementos hijos */
+    justify-content: space-evenly;
 }
 .item {
     border: medium solid #999;
