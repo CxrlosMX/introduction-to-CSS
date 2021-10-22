@@ -62,7 +62,7 @@ body {
     align-items: center;
 
     /* align-content ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal. Esta propiedad no funciona cuando los hijos estan en una sola linea
-    Cuando flex:wrap:nowrap NO FUNCIONA*/
+    Cuando flex-wrap:nowrap NO FUNCIONA*/
     align-content: flex-end;
 
 
