@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    width: 1000px;
+    width: 100%;
   height: 30vh;
   background-color: #333;
   display: flex;
@@ -21,9 +21,17 @@ flex-basic: 1;
 */
 
 .item {
-    width: 100px;
+   
   border: medium solid #999;
   background-color: #666;
   /* flex-grow : Si tenemos espacio disponible, los hijos se reparten el espacio sonbrante*/
-  flex-grow: 1;
+  /* flex-grow: 1; */
+
+  /* flex-shrink: Cuando nosotros minimizamos nuestra ventana los componentes dentro de ella reducen su tamaño, esto quiere decir que el valor de flex-shrink por defecto es 1, es true entonces tiene permitido nuestros componentes hijos reducir su tamaño segun el tamaño o espacio dentro del contenedor padre */
+  flex-shrink: 1;
+}
+.item:nth-child(2){
+    /* Esto quiere decir que nuestro componente va a reducir dos vecez mas de los componentes que lo acompañan */
+    flex-shrink: 2;
+
 }
