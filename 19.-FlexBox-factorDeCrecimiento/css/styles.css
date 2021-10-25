@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    width: 100%;
+  width: 100%;
   height: 30vh;
   background-color: #333;
   display: flex;
@@ -21,7 +21,6 @@ flex-basic: 1;
 */
 
 .item {
-   
   border: medium solid #999;
   background-color: #666;
   /* flex-grow : Si tenemos espacio disponible, los hijos se reparten el espacio sonbrante*/
@@ -29,9 +28,25 @@ flex-basic: 1;
 
   /* flex-shrink: Cuando nosotros minimizamos nuestra ventana los componentes dentro de ella reducen su tamaño, esto quiere decir que el valor de flex-shrink por defecto es 1, es true entonces tiene permitido nuestros componentes hijos reducir su tamaño segun el tamaño o espacio dentro del contenedor padre */
   flex-shrink: 1;
-}
-.item:nth-child(2){
-    /* Esto quiere decir que nuestro componente va a reducir dos vecez mas de los componentes que lo acompañan */
-    flex-shrink: 2;
 
+  /* -------------------------------
+flex-basis
+  Es el tamaño del elemento hijo dentro de la linea de la caja de flexbox
+  Si la caja de flex-box tiene dirección de fila, flex-basis representa el width
+  Si la caja flex-box tiene dirección de columna, flex-basis representa el height 
+  Valor por defecto
+
+  NOTA: Aunque estableszamos un width el elemento respetara el valor que tenemos dentro de nuestra sentencia flex-basis:
+  Como se ve en el siguiente ejemplo, tenemos declarado un widht y por cascada podemos intuir que el valor que se asignara sera 200px ´pero no sera a si, por que el flex-basis tiene mayor index-z
+*/
+
+flex-basis: 100px;
+width: 200px;
+
+/* En CSS tenemos un shorthead el cual en una sola linea nos permite escribir solamente en una linea la propiedad flex-grow-flex-shrink-flex-basis */
+flex:0 1 auto;
+}
+.item:nth-child(2) {
+  /* Esto quiere decir que nuestro componente va a reducir dos vecez mas de los componentes que lo acompañan */
+  flex-shrink: 2;
 }
