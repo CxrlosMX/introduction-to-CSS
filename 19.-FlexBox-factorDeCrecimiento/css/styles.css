@@ -53,6 +53,14 @@ flex-basis
   Un valor menor siempre ira antes que un valor mayor
   */
   order: 0;
+
+
+  /* ----------------------------
+    align self 
+    Sobreescribe el valor de la propiedad align-items sólo para el elemento hijo especificado
+    Valor por defecto stretch
+  */
+  align-self: stretch;
 }
 .item:nth-child(2) {
   /* Esto quiere decir que nuestro componente va a reducir dos vecez mas de los componentes que lo acompañan */
@@ -61,4 +69,8 @@ flex-basis
   NOTA: Un valor menor siempre ira antes que un valor mayor
   */
   order: 1;
+}
+.item:nth-child(3) {
+  align-self: center ;
+  
 }
