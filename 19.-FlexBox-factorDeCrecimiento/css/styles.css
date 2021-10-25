@@ -40,13 +40,25 @@ flex-basis
   Como se ve en el siguiente ejemplo, tenemos declarado un widht y por cascada podemos intuir que el valor que se asignara sera 200px ´pero no sera a si, por que el flex-basis tiene mayor index-z
 */
 
-flex-basis: 100px;
-width: 200px;
+  flex-basis: 100px;
+  width: 200px;
 
-/* En CSS tenemos un shorthead el cual en una sola linea nos permite escribir solamente en una linea la propiedad flex-grow-flex-shrink-flex-basis */
-flex:0 1 auto;
+  /* En CSS tenemos un shorthead el cual en una sola linea nos permite escribir solamente en una linea la propiedad flex-grow-flex-shrink-flex-basis */
+  flex: 0 1 auto;
+
+  /*--------------
+  Representa el orden que tendrán los elementos hijos en la caja flexbox
+  Valor por defecto 0
+  Se aceptan valores positivos y negativos 
+  Un valor menor siempre ira antes que un valor mayor
+  */
+  order: 0;
 }
 .item:nth-child(2) {
   /* Esto quiere decir que nuestro componente va a reducir dos vecez mas de los componentes que lo acompañan */
   flex-shrink: 2;
+  /* Ejemplo de uso order: En este caso todos nuestros elementos tienen un orden de 0, los valores menores siempre iran antes, en este ejemplo a  nuestro elemento de estamos poniendo un valor de orden de 1, esto quiere decir que todos nuestros elementos tienen el valor 0 por lo cual este elemento ira hata el final
+  NOTA: Un valor menor siempre ira antes que un valor mayor
+  */
+  order: 1;
 }
