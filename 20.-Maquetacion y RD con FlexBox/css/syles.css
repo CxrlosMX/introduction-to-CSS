@@ -8,6 +8,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* Lo que queremos es que nuestro main ocupe todo el espacio sobrante */
 main {
   flex-grow: 1;
@@ -53,6 +58,15 @@ main {
 .hero-image h1 {
   font-size: 4vw;
 }
+.flex-responsive{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.flex-responsive-item{
+  flex: 1 1 200px;
+  border: thin solid #111;
+}
 
 @media screen and (min-width: 1024px) {
   .header {
@@ -65,5 +79,16 @@ main {
   }
   .menu li {
     padding: 0.5rem;
+  }
+  .flex-container{
+    display: flex;
+    align-items: center;
+
+  }
+  .flex-item{
+    flex: 0 0 50%;
+  }
+  .flex-order-1{
+    order: 1;
   }
 }
